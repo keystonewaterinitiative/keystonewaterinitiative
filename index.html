@@ -3,374 +3,238 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Keystone Water Initiative</title>
-  <meta name="description" content="Independent watershed engineering and water quality research initiative focused on Pennsylvania and the Appalachian region." />
+  <meta name="description" content="Keystone Water Initiative is an independent research-driven effort focused on Pennsylvania water quality, watershed restoration, acid mine drainage, infrastructure impacts, and public education." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="#home" class="brand" aria-label="Keystone Water Initiative home">
-        <img src="logo.png" alt="Keystone Water Initiative logo" class="brand-logo" />
+      <a href="index.html" class="brand" aria-label="Keystone Water Initiative home">
+        <img src="images/logo.png" alt="Keystone Water Initiative logo" class="brand-logo" />
         <div class="brand-text">
           <span>Keystone Water</span>
           <span>Initiative</span>
         </div>
       </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#watersheds">Watersheds</a>
-        <a href="#news">News</a>
-        <a href="#help">How You Can Help</a>
-        <a href="#partnerships">Partnerships</a>
-        <a href="#contact">Contact</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="news.html">News</a>
+        <a href="help.html">How You Can Help</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="home" class="hero">
+    <!-- HERO -->
+    <section class="hero">
       <div class="hero-overlay"></div>
+
       <div class="container hero-content">
-        <img src="logo.png" alt="Keystone Water Initiative logo" class="hero-logo" />
+        <img src="images/logo.png" alt="Keystone Water Initiative logo" class="hero-logo" />
+
         <p class="eyebrow hero-eyebrow">Pennsylvania &amp; the Appalachian Region</p>
+
         <h1>Keystone Water Initiative</h1>
-        <p class="hero-subtitle">Researching Water Quality · Protecting Ecosystems · Advancing Restoration</p>
+
+        <p class="hero-subtitle">
+          Researching Water Quality · Protecting Ecosystems · Advancing Restoration
+        </p>
+
         <p class="hero-copy">
-          Keystone Water Initiative is dedicated to investigating acid mine drainage, watershed degradation,
-          ecological threats, and environmental infrastructure challenges — while translating complex issues into
-          clear public understanding and actionable solutions for Pennsylvania's communities.
+          Keystone Water Initiative is an independent research-driven effort focused on the environmental challenges
+          shaping Pennsylvania’s watersheds. From acid mine drainage and industrial contamination to habitat loss and
+          aging infrastructure, we use science, engineering, and public education to investigate threats, protect
+          ecosystems, and advance meaningful restoration.
         </p>
+
         <div class="hero-actions">
-          <a href="#research" class="btn btn-primary">Explore Our Research</a>
-          <a href="#watersheds" class="btn btn-secondary">View Field Work</a>
-          <a href="#help" class="btn btn-secondary">How You Can Help</a>
-        </div>
-        <a href="#stakes" class="scroll-cue" aria-label="Scroll down">↓</a>
-      </div>
-    </section>
-
-    <section id="stakes" class="section section-light">
-      <div class="container">
-        <p class="eyebrow">Why It Matters</p>
-        <h2>The Stakes Are Real</h2>
-        <p class="section-intro narrow">
-          Pennsylvania's water challenges are not abstract. They shape public health, community resilience,
-          native wildlife, and the long-term livability of the region. Understanding the problem is where meaningful action begins.
-        </p>
-
-        <div class="impact-grid">
-          <article class="impact-card impact-warm">
-            <div class="icon-box">⚠</div>
-            <h3>Legacy pollution continues to impair Pennsylvania streams</h3>
-            <p>
-              Abandoned mine drainage from centuries of coal extraction still acidifies hundreds of miles of
-              Pennsylvania waterways — largely unaddressed and underreported.
-            </p>
-          </article>
-          <article class="impact-card impact-cool">
-            <div class="icon-box">◔</div>
-            <h3>Clean water supports communities, recreation, and ecosystems</h3>
-            <p>
-              Healthy watersheds underpin drinking water systems, outdoor economies, agricultural irrigation,
-              and the ecological fabric that holds Pennsylvania communities together.
-            </p>
-          </article>
-          <article class="impact-card impact-blue">
-            <div class="icon-box">◌</div>
-            <h3>Brook trout depend on cold, healthy headwaters</h3>
-            <p>
-              Pennsylvania's native brook trout are a sentinel species — their presence signals water quality
-              and thermal integrity. Their disappearance is a warning we cannot afford to ignore.
-            </p>
-          </article>
-          <article class="impact-card impact-green">
-            <div class="icon-box">❉</div>
-            <h3>Restoration strengthens environmental resilience</h3>
-            <p>
-              Science-based stream restoration rebuilds biological communities, stabilizes stream banks,
-              reduces flood vulnerability, and restores the natural capacity of watersheds to self-heal.
-            </p>
-          </article>
+          <a href="research.html" class="btn btn-primary">Explore Our Research</a>
+          <a href="about.html" class="btn btn-secondary">Learn About Our Mission</a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section section-light about-section">
+    <!-- ABOUT / MISSION MIDDLE SECTION -->
+    <section class="section section-light">
       <div class="container two-column">
         <div class="about-copy">
-          <p class="eyebrow">About the Initiative</p>
-          <h2>Studying the Problems Others Overlook</h2>
+          <p class="eyebrow">Who We Are</p>
+
+          <h2>Studying Pennsylvania’s Water Challenges</h2>
+
           <p>
-            Keystone Water Initiative exists to study overlooked environmental problems that affect communities,
-            ecosystems, and public health across Pennsylvania and the broader Appalachian region. Acid mine drainage
-            from thousands of abandoned coal and iron mines continues to silently poison streams, destroy aquatic habitat,
-            and contaminate groundwater — yet receives a fraction of the attention it deserves.
+            Keystone Water Initiative is an independent environmental engineering effort focused on water quality,
+            watershed restoration, legacy pollution, and public education across Pennsylvania and the Appalachian region.
           </p>
+
           <p>
-            We apply civil and environmental engineering methodology, rigorous water quality analysis, and GIS-based
-            spatial tools to document the scale of this crisis and develop practical paths toward restoration.
-            Our work is independent, data-driven, and publicly available.
+            We investigate overlooked environmental issues, translate technical findings into public understanding,
+            and promote science-based solutions for healthier watersheds and communities.
           </p>
-          <div class="tag-row">
-            <span>Acid Mine Drainage</span>
-            <span>Industrial Runoff</span>
-            <span>Habitat Loss</span>
-            <span>Legacy Contamination</span>
-            <span>Infrastructure Impacts</span>
-            <span>Environmental Accountability</span>
+
+          <div class="feature-row">
+            <div class="feature-item">
+              <div class="feature-icon">🔬</div>
+              <h3>Research-Driven</h3>
+              <p>Science and data are at the core of everything we do.</p>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">👥</div>
+              <h3>Public Education</h3>
+              <p>Making complex environmental issues clear and accessible.</p>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">🌿</div>
+              <h3>Engineering Solutions</h3>
+              <p>Applying practical solutions for long-term watershed recovery.</p>
+            </div>
           </div>
-          <a href="#research" class="text-link">Learn about our mission <span>→</span></a>
         </div>
 
         <div class="about-visual">
-          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Field researcher standing in a stream" />
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80" alt="Forested Pennsylvania stream" />
           <div class="quote-card">
-            <p>“Monitoring Water Quality. Designing Solutions. Restoring Communities.”</p>
-            <span>— KWI Mission Statement</span>
+            <p>Healthy watersheds. Stronger communities. A better future.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="research" class="section section-light">
+    <!-- RECENT RESEARCH -->
+    <section class="section section-blue">
       <div class="container">
-        <p class="eyebrow">Current Focus Areas</p>
-        <h2>Where the Work Happens</h2>
-        <p class="section-intro narrow-left">
-          Our current efforts concentrate on four interconnected areas of environmental research, monitoring,
-          engineering, and public communication — all aimed at understanding and addressing Pennsylvania's
-          most pressing water quality challenges.
-        </p>
+        <div class="centered-heading">
+          <p class="eyebrow">Our Latest Work</p>
+          <h2>Recent Research &amp; Updates</h2>
+          <p>
+            Explore research briefs, technical features, and public updates on Pennsylvania’s critical water issues.
+          </p>
+        </div>
 
-        <div class="research-grid">
-          <article class="research-card top-blue">
-            <div class="card-top">
-              <div class="icon-box soft">💧</div>
-              <span class="status-pill">Active Research</span>
+        <div class="article-grid">
+          <article class="article-card">
+            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80" alt="Acid mine drainage stream" />
+            <div class="article-content">
+              <span class="article-tag">Research Brief</span>
+              <h3>The Jeddo Mine Tunnel</h3>
+              <p>
+                Legacy mine drainage continues to impact Nescopeck Creek and downstream ecosystems.
+              </p>
+              <a href="articles/jeddo-mine-tunnel.html" class="text-link">Read Brief →</a>
             </div>
-            <h3>Acid Mine Drainage Research</h3>
-            <p>
-              Field investigation and chemical analysis of AMD-impacted stream reaches across Pennsylvania's anthracite and bituminous coal regions. Documenting metal loading, pH depression, and biological impairment.
-            </p>
-            <ul>
-              <li>pH &amp; Conductivity Monitoring</li>
-              <li>Dissolved Metals Analysis</li>
-              <li>Biological Assessments</li>
-              <li>Discharge Characterization</li>
-            </ul>
           </article>
 
-          <article class="research-card top-teal">
-            <div class="card-top">
-              <div class="icon-box soft">🗺</div>
-              <span class="status-pill">Ongoing</span>
+          <article class="article-card">
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="Industrial development landscape" />
+            <div class="article-content">
+              <span class="article-tag">Research Brief</span>
+              <h3>Hazleton Data Centers</h3>
+              <p>
+                Examining water quality questions surrounding rapid industrial development in Northeastern Pennsylvania.
+              </p>
+              <a href="research.html" class="text-link">Coming Soon →</a>
             </div>
-            <h3>Watershed Monitoring</h3>
-            <p>
-              Systematic documentation of water quality conditions, land use impacts, and ecological indicators across priority Pennsylvania watershed systems — building a baseline dataset for long-term analysis.
-            </p>
-            <ul>
-              <li>Stream Macroinvertebrates</li>
-              <li>Water Temperature Logging</li>
-              <li>GIS Data Collection</li>
-              <li>Impairment Mapping</li>
-            </ul>
           </article>
 
-          <article class="research-card top-slate">
-            <div class="card-top">
-              <div class="icon-box soft">⚙</div>
-              <span class="status-pill">Planning Phase</span>
+          <article class="article-card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Stream culvert" />
+            <div class="article-content">
+              <span class="article-tag">Technical Brief</span>
+              <h3>Why Culverts Fail Streams</h3>
+              <p>
+                How aging crossings block fish passage, increase erosion, and degrade aquatic habitat.
+              </p>
+              <a href="research.html" class="text-link">Coming Soon →</a>
             </div>
-            <h3>Restoration Strategy Evaluation</h3>
-            <p>
-              Assessment of passive and active treatment approaches for AMD-impaired streams, including constructed wetlands, anoxic limestone drains, and land reclamation feasibility studies.
-            </p>
-            <ul>
-              <li>Passive Treatment Concepts</li>
-              <li>Wetland Construction Design</li>
-              <li>Cost-Benefit Analysis</li>
-              <li>Site Prioritization</li>
-            </ul>
           </article>
+        </div>
 
-          <article class="research-card top-green">
-            <div class="card-top">
-              <div class="icon-box soft">⌂</div>
-              <span class="status-pill">Active</span>
-            </div>
-            <h3>Public Education &amp; Awareness</h3>
-            <p>
-              Translating technical research into accessible public content — communicating the causes and consequences of watershed degradation to communities, students, advocates, and decision-makers.
-            </p>
-            <ul>
-              <li>Science Communication</li>
-              <li>Community Outreach</li>
-              <li>Environmental Reporting</li>
-              <li>Policy Briefings</li>
-            </ul>
-          </article>
+        <div class="center-button">
+          <a href="research.html" class="btn btn-dark">View All Research</a>
         </div>
       </div>
     </section>
 
-    <section id="watersheds" class="section section-light">
-      <div class="container">
-        <p class="eyebrow">Field Work</p>
-        <h2>Pennsylvania's Watersheds</h2>
-        <p class="section-intro narrow-left">
-          From cold mountain headwaters to legacy industrial zones, every watershed tells a story.
-          Our field investigations document the real conditions shaping Pennsylvania's water systems —
-          the damage, the resilience, and the potential for recovery.
-        </p>
-
-        <div class="gallery-grid">
-          <figure class="gallery-card gallery-wide">
-            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80" alt="Pennsylvania headwater stream" />
-            <figcaption>
-              <span>Pennsylvania headwater stream</span>
-              <em>Headwaters</em>
-            </figcaption>
-          </figure>
-          <figure class="gallery-card gallery-tall">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Watershed restoration in progress" />
-            <figcaption>
-              <span>Watershed restoration in progress</span>
-              <em>Restoration</em>
-            </figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <img src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&fit=crop&w=1200&q=80" alt="Healthy coldwater habitat" />
-            <figcaption>
-              <span>Healthy coldwater habitat</span>
-              <em>Habitat</em>
-            </figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=80" alt="Legacy pollution impacts" />
-            <figcaption>
-              <span>Legacy pollution impacts</span>
-              <em>Impairment</em>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="help" class="section section-light">
-      <div class="container">
-        <p class="eyebrow">How You Can Help</p>
-        <h2>Turning Awareness Into Action</h2>
-        <p class="section-intro narrow-left">
-          Keystone Water Initiative is built around research, education, and accountability. Support begins with
-          staying informed, sharing credible information, and encouraging decision-makers to prioritize watershed
-          restoration, pollution prevention, and responsible development.
-        </p>
-
-        <div class="impact-grid">
-          <article class="impact-card">
-            <div class="icon-box soft">1</div>
-            <h3>Stay Informed</h3>
-            <p>
-              Follow updates on Pennsylvania water quality issues, abandoned mine drainage, restoration projects,
-              and environmental infrastructure concerns.
-            </p>
-          </article>
-
-          <article class="impact-card">
-            <div class="icon-box soft">2</div>
-            <h3>Share the Work</h3>
-            <p>
-              Help bring attention to overlooked watershed issues by sharing research summaries, field updates,
-              and educational resources.
-            </p>
-          </article>
-
-          <article class="impact-card">
-            <div class="icon-box soft">3</div>
-            <h3>Advocate Locally</h3>
-            <p>
-              Encourage local governments, agencies, and businesses to support science-based restoration,
-              pollution prevention, and long-term environmental accountability.
-            </p>
-          </article>
-
-          <article class="impact-card">
-            <div class="icon-box soft">4</div>
-            <h3>Support Future Fieldwork</h3>
-            <p>
-              Future support will help fund water quality testing, field equipment, site assessments, and
-              public-facing research materials.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="news" class="newsletter-section">
-      <div class="newsletter-overlay"></div>
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
       <div class="container newsletter-content">
         <p class="coming-pill">● Coming Soon</p>
+
         <h2>Research Updates &amp;<br>Newsletter</h2>
-        <p class="section-intro newsletter-intro">
-          Keystone Water Initiative is developing future research updates and a newsletter focused on
-          Pennsylvania water quality, restoration progress, environmental policy, and field investigations.
-          Be among the first to receive our findings.
+
+        <p class="newsletter-intro">
+          Keystone Water Initiative is developing future research updates and a newsletter focused on Pennsylvania
+          water quality, restoration progress, environmental policy, and field investigations.
         </p>
+
         <div class="topic-pills">
           <span>Water Quality Reports</span>
           <span>Environmental Policy</span>
           <span>Restoration Progress</span>
           <span>Research Findings</span>
-          <span>Volunteer Events</span>
         </div>
+
         <form class="newsletter-form" action="#" method="post">
           <input type="email" placeholder="Enter your email address" aria-label="Email address" />
           <button type="submit" class="btn btn-primary">Notify Me</button>
         </form>
-        <p class="form-note">No spam. Unsubscribe at any time. Updates only.</p>
+
+        <p class="form-note">No spam. Updates only.</p>
       </div>
     </section>
   </main>
 
-  <footer id="contact" class="site-footer">
+  <!-- FOOTER -->
+  <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <div class="footer-brand">
-          <div class="footer-mark"></div>
+          <img src="images/logo.png" alt="Keystone Water Initiative logo" />
           <div>
             <strong>Keystone Water Initiative</strong>
             <p>Pennsylvania &amp; Appalachian Region</p>
           </div>
         </div>
       </div>
+
       <div>
         <h3>Navigation</h3>
         <ul class="footer-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#watersheds">Watersheds</a></li>
-          <li><a href="#news">News</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="news.html">News</a></li>
         </ul>
       </div>
-      <div id="partnerships">
+
+      <div>
         <h3>Partnerships</h3>
-        <p>Open to future collaboration with universities, watershed groups, nonprofits, engineering professionals, and community organizations.</p>
+        <p>
+          Open to future collaboration with universities, watershed groups, nonprofits, engineering professionals,
+          and community organizations.
+        </p>
       </div>
+
       <div>
         <h3>Contact</h3>
-        <ul class="footer-links contact-list">
+        <ul class="footer-links">
           <li><a href="mailto:keystonewaterinitiative@gmail.com">keystonewaterinitiative@gmail.com</a></li>
           <li><a href="https://www.linkedin.com/company/keystone-water-initiative/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="#">Pennsylvania, United States</a></li>
+          <li>Pennsylvania, United States</li>
         </ul>
       </div>
     </div>
