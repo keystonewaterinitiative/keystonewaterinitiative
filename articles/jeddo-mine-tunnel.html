@@ -5,13 +5,233 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>The Jeddo Mine Tunnel | Keystone Water Initiative</title>
-  <meta name="description" content="A Keystone Water Initiative research brief on the Jeddo Mine Tunnel, acid mine drainage, and watershed impacts in Pennsylvania." />
+  <meta name="description" content="A Keystone Water Initiative research brief on the Jeddo Mine Tunnel, acid mine drainage, mine hydrology, and future water-quality sampling." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    .article-hero {
+      position: relative;
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(4,19,46,0.95) 0%, rgba(4,19,46,0.85) 42%, rgba(4,19,46,0.20) 100%),
+        url("../images/jeddominetunnel.jpg") center/cover no-repeat;
+    }
+
+    .article-hero-content {
+      max-width: 760px;
+      padding: 90px 0;
+    }
+
+    .article-hero h1 {
+      font-size: clamp(3rem, 7vw, 5.8rem);
+      margin-bottom: 18px;
+    }
+
+    .article-hero .deck {
+      font-family: "Playfair Display", Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      line-height: 1.25;
+      color: #e9f4f2;
+      margin-bottom: 28px;
+    }
+
+    .article-hero p {
+      font-size: 1.08rem;
+      color: rgba(255,255,255,0.88);
+      max-width: 680px;
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .article-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      color: #dff7f4;
+      font-size: 0.95rem;
+    }
+
+    .article-body {
+      background: #fff;
+      padding: 70px 0 90px;
+    }
+
+    .article-container {
+      width: min(1120px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .article-section {
+      margin-bottom: 54px;
+    }
+
+    .article-section h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: #071d3a;
+      margin-bottom: 18px;
+    }
+
+    .article-section p {
+      color: #334258;
+      font-size: 1.06rem;
+      line-height: 1.78;
+      margin-bottom: 18px;
+    }
+
+    .article-grid-two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 34px;
+      align-items: start;
+      margin-bottom: 52px;
+    }
+
+    .article-image-card {
+      background: #fff;
+      border: 1px solid rgba(20,37,61,0.14);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 18px 44px rgba(17,36,67,0.08);
+    }
+
+    .article-image-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .article-image-card figcaption {
+      padding: 12px 16px 16px;
+      font-size: 0.9rem;
+      color: #607089;
+      font-style: italic;
+      border-top: 1px solid rgba(20,37,61,0.08);
+    }
+
+    .full-image {
+      margin: 24px 0 46px;
+    }
+
+    .callout {
+      background: linear-gradient(180deg, #eef9f4, #f7fbf8);
+      border: 1px solid rgba(47,125,79,0.25);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 18px 44px rgba(17,36,67,0.06);
+    }
+
+    .callout h3 {
+      margin: 0 0 14px;
+      font-size: 1.65rem;
+      color: #071d3a;
+      font-family: "Playfair Display", Georgia, serif;
+    }
+
+    .parameter-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px 20px;
+      margin-top: 22px;
+    }
+
+    .parameter-grid span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #334258;
+      font-weight: 600;
+      font-size: 0.96rem;
+    }
+
+    .parameter-grid span::before {
+      content: "✓";
+      color: #2f7d4f;
+      font-weight: 900;
+    }
+
+    .closing-band {
+      background: #071d3a;
+      color: white;
+      border-radius: 18px;
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 30px;
+      align-items: center;
+      margin-top: 58px;
+    }
+
+    .closing-band h2 {
+      color: #9fd48f;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .closing-band p {
+      color: rgba(255,255,255,0.86);
+      margin: 0;
+    }
+
+    .references {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(20,37,61,0.14);
+      color: #607089;
+      font-size: 0.88rem;
+    }
+
+    .references h2 {
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+      color: #334258;
+    }
+
+    .references p {
+      font-size: 0.88rem;
+      line-height: 1.5;
+      margin-bottom: 8px;
+      color: #607089;
+    }
+
+    @media (max-width: 850px) {
+      .article-hero {
+        min-height: auto;
+        background:
+          linear-gradient(rgba(4,19,46,0.82), rgba(4,19,46,0.9)),
+          url("../images/jeddominetunnel.jpg") center/cover no-repeat;
+      }
+
+      .article-grid-two,
+      .closing-band {
+        grid-template-columns: 1fr;
+      }
+
+      .parameter-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .article-container {
+        width: min(1120px, calc(100% - 28px));
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -36,39 +256,302 @@
     </div>
   </header>
 
-  <main class="section section-light">
-    <div class="container" style="max-width: 850px;">
-      <p class="eyebrow">Research Brief</p>
-      <h1 style="color:#071d3a; font-size: clamp(2.6rem, 6vw, 4.6rem);">
-        The Jeddo Mine Tunnel
-      </h1>
+  <main>
+    <section class="article-hero">
+      <div class="container article-hero-content">
+        <p class="eyebrow hero-eyebrow">Research Brief</p>
 
-      <p style="font-size:1.2rem; color:#607089;">
-        Legacy Infrastructure and Modern Watershed Impacts
-      </p>
+        <h1>The Jeddo Mine Tunnel</h1>
 
-      <hr style="margin: 32px 0; border: none; border-top: 1px solid rgba(20,37,61,0.15);">
+        <p class="deck">
+          Legacy Infrastructure, Mine Hydrology, and a Modern Water-Quality Research Opportunity
+        </p>
 
-      <h2>Executive Summary</h2>
-      <p>
-        This page is a placeholder for the future Keystone Water Initiative research brief on the Jeddo Mine Tunnel.
-      </p>
+        <p>
+          Beneath the hills of northeastern Pennsylvania, a nineteenth-century engineering system continues
+          to move large volumes of water through abandoned underground mine workings. Built during the anthracite
+          coal era to relieve flooding and restore access to valuable coal seams, the Jeddo Mine Tunnel remains
+          one of the most consequential examples of legacy mine-water infrastructure in Pennsylvania.
+        </p>
 
-      <h2>Background</h2>
-      <p>
-        Add background information here.
-      </p>
+        <div class="article-meta">
+          <span>📍 Little Nescopeck Creek Watershed</span>
+          <span>⛏ Anthracite Coal Region</span>
+          <span>💧 Active Mine-Water Discharge</span>
+        </div>
+      </div>
+    </section>
 
-      <h2>Why It Matters</h2>
-      <p>
-        Add public-facing explanation here.
-      </p>
+    <section class="article-body">
+      <div class="article-container">
 
-      <h2>Sources</h2>
-      <p>
-        Add sources here.
-      </p>
-    </div>
+        <div class="article-section">
+          <p>
+            What was once a strategic drainage asset for industry is now something equally important:
+            a modern environmental monitoring site. The water emerging from historic mine systems may contain
+            dissolved metals, sulfate, acidity, suspended solids, and other indicators of long-term geochemical
+            reactions underground.
+          </p>
+
+          <p>
+            For researchers, engineers, and watershed advocates, the Jeddo Tunnel offers a rare opportunity
+            to study how historic subsurface infrastructure continues to influence present-day water quality.
+            For Keystone Water Initiative, this site represents a clear next step in field-based Pennsylvania
+            water research.
+          </p>
+        </div>
+
+        <div class="article-grid-two">
+          <div class="article-section">
+            <h2>Why the Tunnel Was Built</h2>
+
+            <p>
+              During the late 1800s, underground anthracite mining expanded rapidly across the Hazleton coal basin.
+              As workings advanced deeper and interconnected between collieries, groundwater infiltration and storm
+              recharge became persistent operational threats. Flooded gangways, submerged chambers, and rising mine
+              pools could halt production, damage equipment, and significantly increase pumping costs.
+            </p>
+
+            <p>
+              The Jeddo Mine Tunnel was developed as a gravity drainage system designed to lower hydraulic head within
+              portions of the mine network. By creating a lower-elevation outlet, accumulated water could discharge
+              naturally rather than relying entirely on energy-intensive pumping systems.
+            </p>
+
+            <p>
+              In engineering terms, the tunnel functioned as a regional dewatering control measure. Lowering mine-water
+              elevations increased accessibility to coal reserves, improved operational safety, and reduced the economic
+              burden of continuous pumping.
+            </p>
+          </div>
+
+          <figure class="article-image-card">
+            <img src="../images/gradation.png" alt="Schematic cross section of the Jeddo Tunnel drainage system" />
+            <figcaption>
+              Figure 1. Conceptual cross-section showing the Jeddo Drainage Tunnel and contributing coal basins.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="article-section">
+          <h2>A Hydrologic System That Never Fully Shut Down</h2>
+
+          <p>
+            Although large-scale deep anthracite mining declined decades ago, abandoned mine voids often remain
+            hydrologically active. Water can continue entering historic workings through precipitation infiltration,
+            fractured bedrock pathways, shallow groundwater recharge, collapsed surface openings, interconnected shafts
+            and gangways, and adjacent flooded mine pools.
+          </p>
+
+          <p>
+            Once inside the system, water moves through underground pathways governed by elevation gradients, available
+            void space, and subsurface connectivity. In many legacy coal regions, tunnels such as Jeddo still act as
+            engineered discharge points for large mine-water basins.
+          </p>
+
+          <p>
+            This makes the site valuable not only historically, but scientifically. It is effectively an accessible
+            outlet of a much larger underground hydrogeologic system.
+          </p>
+        </div>
+
+        <div class="article-grid-two">
+          <figure class="article-image-card">
+            <img src="../images/watershedmap.png" alt="Jeddo Tunnel drainage subbasin map" />
+            <figcaption>
+              Figure 2. Little Black Creek, Black Creek, Hazle Creek, and Cranberry Creek subbasins contributing to the Jeddo Tunnel drainage basin.
+            </figcaption>
+          </figure>
+
+          <figure class="article-image-card">
+            <img src="../images/watershedmap2.png" alt="Jeddo Tunnel drainage system and geobasin map" />
+            <figcaption>
+              Figure 3. Geobasins, tunnel locations, and historical mine-water flow relationships in the Jeddo Tunnel drainage system.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="article-grid-two">
+          <div class="article-section">
+            <h2>Why Water Quality Matters Here</h2>
+
+            <p>
+              When oxygenated water interacts with sulfide-bearing rock exposed during mining, geochemical oxidation
+              reactions can occur. One of the most common involves pyrite oxidation, which may generate acidity and
+              mobilize dissolved metals. Depending on mineralogy, residence time, buffering capacity, and flow
+              conditions, mine drainage may exhibit varying water chemistry.
+            </p>
+
+            <p>
+              These parameters help characterize whether discharge is acidic, net alkaline, metal-loaded, seasonally
+              variable, or potentially treatable through passive systems.
+            </p>
+
+            <div class="parameter-grid">
+              <span>pH</span>
+              <span>Specific Conductivity</span>
+              <span>Sulfate</span>
+              <span>Iron</span>
+              <span>Manganese</span>
+              <span>Aluminum</span>
+              <span>Calcium / Magnesium</span>
+              <span>Total Suspended Solids</span>
+              <span>Temperature</span>
+              <span>Dissolved Oxygen</span>
+              <span>Alkalinity</span>
+              <span>Flow Rate</span>
+            </div>
+          </div>
+
+          <div class="callout">
+            <h3>Why the Jeddo Tunnel Is an Ideal Research Site</h3>
+
+            <p>
+              Many abandoned mine systems are difficult to access or poorly defined. The Jeddo Tunnel is different
+              because it provides a concentrated, observable discharge point where water from a larger underground
+              system emerges into the surface watershed.
+            </p>
+
+            <p>
+              Rather than chasing diffuse seepage points, investigators can sample a major outfall. Discharge rate can
+              also be compared with concentration data to estimate pollutant mass loading:
+            </p>
+
+            <p><strong>Load = Concentration × Flow</strong></p>
+
+            <p>
+              This is critical because environmental impact depends not only on concentration, but total mass released
+              over time. Storm events, snowmelt, drought, and recharge cycles may change both flow and chemistry.
+            </p>
+          </div>
+        </div>
+
+        <div class="article-grid-two">
+          <figure class="article-image-card">
+            <img src="../images/littlenescopeck.webp" alt="Little Nescopeck Creek downstream of the Jeddo Tunnel discharge" />
+            <figcaption>
+              Little Nescopeck Creek downstream of the Jeddo Tunnel discharge.
+            </figcaption>
+          </figure>
+
+          <div class="article-section">
+            <h2>What Keystone Water Initiative Plans to Do Next</h2>
+
+            <p>
+              The next phase of this project is direct field investigation centered on water-quality sampling and
+              analysis. Our goal is to develop a scientifically credible baseline dataset for the Jeddo Tunnel discharge
+              and surrounding receiving waters.
+            </p>
+
+            <p>
+              Keystone Water Initiative aims to analyze water for dissolved metals, mineral ions, sulfate concentration,
+              pH, alkalinity, conductivity, turbidity, total suspended solids, temperature, flow, and potential modern
+              pollutants where relevant.
+            </p>
+
+            <p>
+              A modern dataset can help answer important questions: Is the discharge strongly acidic or buffered?
+              Which metals dominate the chemistry? How much pollutant mass may be entering downstream waters?
+              Does chemistry shift after rainfall events? Are there signs of additional contamination sources beyond
+              classic abandoned mine drainage?
+            </p>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <h2>Beyond History: A Pennsylvania Water Legacy</h2>
+
+          <p>
+            The Jeddo Mine Tunnel should not be viewed only as a remnant of the coal era. It is an active hydraulic
+            outlet connected to legacy land use, regional geology, and modern watershed health.
+          </p>
+
+          <p>
+            Across Pennsylvania, many waterways still reflect decisions made over a century ago. The challenge now is
+            to apply current science, engineering, and public stewardship to understand and improve those systems.
+          </p>
+
+          <p>
+            The coal industry built the tunnel to move water efficiently. Today, that same flow can provide something
+            different: data. By sampling and studying the Jeddo Mine Tunnel, Keystone Water Initiative can better
+            understand abandoned mine drainage processes, quantify ongoing impacts, and identify realistic restoration
+            pathways for northeastern Pennsylvania streams.
+          </p>
+        </div>
+
+        <div class="closing-band">
+          <div>
+            <h2>Why This Matters for Pennsylvania</h2>
+            <p>
+              The Jeddo Mine Tunnel is more than a historic structure. It is an active part of today’s watershed.
+              Understanding legacy mine drainage is essential for protecting streams, supporting communities,
+              and guiding science-based restoration.
+            </p>
+          </div>
+
+          <div>
+            <p>
+              <strong>Science for clean water.</strong><br>
+              <strong>Communities for life.</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="references">
+          <h2>References</h2>
+          <p>
+            Ballaron, P.B. 1999. <em>Water Balance for the Jeddo Tunnel Basin, Luzerne County, Pennsylvania.</em>
+            Susquehanna River Basin Commission, Publication No. 208.
+          </p>
+          <p>
+            Hollowell, J.R. 1999. <em>Surface Overflows of Abandoned Mines in the Eastern Middle Anthracite Field.</em>
+            Susquehanna River Basin Commission, Publication No. 207.
+          </p>
+        </div>
+
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="../images/logo.png" alt="Keystone Water Initiative logo" />
+          <div>
+            <strong>Keystone Water Initiative</strong>
+            <p>Pennsylvania &amp; Appalachian Region</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../research.html">Research</a></li>
+          <li><a href="../news.html">News</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Partnerships</h3>
+        <p>
+          Open to future collaboration with universities, watershed groups, nonprofits, engineering professionals,
+          and community organizations.
+        </p>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-links">
+          <li><a href="mailto:keystonewaterinitiative@gmail.com">keystonewaterinitiative@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/company/keystone-water-initiative/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li>Pennsylvania, United States</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
